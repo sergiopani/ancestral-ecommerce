@@ -12,8 +12,8 @@ const PageIntro = () => {
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/slide-1.jpg')" }}>
             <div className="container">
               <div className="page-intro__slide__content">
-                <h2>Sale of the summer collection</h2>
-                <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a>
+                <h2>Colección de prendas Fitness</h2>
+                <a href="/products" className="btn-shop"><i className="icon-right"></i>Compra ahora</a>
               </div>
             </div>
           </div>
@@ -23,8 +23,8 @@ const PageIntro = () => {
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/slide-2.jpg')" }}>
             <div className="container">
               <div className="page-intro__slide__content">
-                <h2>Make your house into a home</h2>
-                <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a>
+                <h2>Haz tuyo el gimnasio</h2>
+                <a href="/products" className="btn-shop"><i className="icon-right"></i>Compra ahora</a>
               </div>
             </div>
           </div>
