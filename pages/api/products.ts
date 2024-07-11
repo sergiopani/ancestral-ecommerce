@@ -1,15 +1,14 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 // fake data
-import products from '../../utils/data/products';
-import { env } from 'process';
+// import products from '../../utils/data/products';
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
   console.log(req);
 
   //Hacer fetch a la api de printful para recuperar los productos
   console.log("Haciendo la request a la api de printful")
-  const API_KEY = env.PRINTFUL_API_KEY;
+  const API_KEY = process.env.PRINTFUL_API_KEY;
 
   const url = 'https://api.printful.com/store/products';
 
@@ -29,7 +28,7 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
       })
       .then(data => {
           console.log('Productos obtenidos:', data);
-          const finalProducts = data.result.map(product => {
+          const finalProducts:any = data.result.map((product:any) => {
             return {
               id: product.id,
               name: product.name,
